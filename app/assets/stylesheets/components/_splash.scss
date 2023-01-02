@@ -1,0 +1,25 @@
+.splash {
+    padding-block: var(--space-l) ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        height:  80vh;
+        display: flex;
+        align-items: center;
+    }
+
+    &__footer {
+        width: 100%;
+        & .btn {
+            width: 100%;
+        }
+        & .btn--light {
+            margin-top: var(--space-m);
+        }
+        justify-self:  end;
+    }
+}

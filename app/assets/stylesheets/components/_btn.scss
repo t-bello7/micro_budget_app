@@ -1,25 +1,24 @@
 .btn {
-    display: inline-block;
-    padding: var(--space-xss) var(--space-m);
-    background-color: transparent;
-    border: solid 2px transparent;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    outline: none;
-    transition: filter 400ms, color 200mx;
+  display: block;
+  padding: var(--space-xxs) var(--space-m);
+  background-color: transparent;
+  border: solid 2px transparent;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  transition: filter 400ms, color 200mx;
 
-    &:hover,
-    &:focus,
-    &:focus-within,
-    &:active {
-      transition: filter 250ms, color 200ms;
-    }
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:active {
+    transition: filter 250ms, color 200ms;
+  }
 
-    &--primary {
-        color: var(--color-white);
-        background-color: var(--color-primary);
-
+  &--primary {
+    color: var(--color-white);
+    background-color: var(--color-primary);
     &:hover,
     &:focus,
     &:focus-within,
@@ -27,34 +26,31 @@
       color: var(--color-white);
       filter: saturate(1.4) brightness(115%);
     }
-    }
-    &--secondary {
-        color: var(--color-white);
-        background-color: var(--color-secondary);
-
-        &:hover,
-        &:focus,
-        &:focus-within,
-        &:active {
-          color: var(--color-white);
-          filter: saturate(1.2) brightness(110%);
-        }
-    }
-
-
-  &--light {
-    color: var(--color-dark);
-    background-color: var(--color-light);
+  }
+  &--secondary {
+    color: var(--color-white);
+    background-color: var(--color-secondary);
 
     &:hover,
     &:focus,
     &:focus-within,
     &:active {
-      color: var(--color-dark);
-      filter: brightness(92%);
+      color: var(--color-white);
+      filter: saturate(1.2) brightness(110%);
     }
   }
+  &--light {
+  color: var(--color-dark);
+  background-color: var(--color-light);
 
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:active {
+    color: var(--color-dark);
+    filter: brightness(92%);
+  }
+  }
   &--dark {
     color: var(--color-white);
     border-color: var(--color-dark);

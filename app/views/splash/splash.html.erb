@@ -1,3 +1,7 @@
-<div class="btn--primary">
-    hello
+<div class="splash">
+    <h2 class="splash__logo"> MyBudget </h2>
+    <div class="splash__footer">
+        <%= button_to "Login", new_user_session_path, method: :get, class: "btn btn--primary" %>
+        <%= button_to "Sign Up", new_user_registration_path, method: :get ,class: "btn btn--light" %>
+    </div>
 </div>
