@@ -8,17 +8,11 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= yield :head %>
   </head>
 
   <body>
   <main>
-    <% if notice %>
-    <div class="alert alert-info"> <%= notice %> </div>
-    <% end %>
-
-    <% if alert %>
-    <div class="alert alert-warning"> <%= alert %> </div>
-    <% end %>
     <%= yield %>
   </main>
   </body>

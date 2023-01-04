@@ -2,11 +2,13 @@ class BudgetsController < ApplicationController
     before_action :authenticate_user!
 
     def index
+        @page_name = 'Transactions'
         @category = Category.find(params['category_id'])
         @budgets = @category.budgets
     end
 
     def new
+        @page_name = 'Add New Transactions'
         @budget = Budget.new
     end
 

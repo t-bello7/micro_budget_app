@@ -1,10 +1,12 @@
 class CategoriesController < ApplicationController
     before_action :authenticate_user!
     def index
+        @page_name = 'Categories'
         @categories = current_user.categories
     end
  
     def new
+        @page_name = 'Add New Category'
         @category = Category.new
     end
 
