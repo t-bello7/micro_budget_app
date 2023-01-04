@@ -18,6 +18,12 @@ en:
           email: 'E-mail.'
         edit:
           email: 'E-mail.'
+      category:
+        name: Name
+    placeholders:
+      category:
+        name: Name
+        icon: Icon
     # hints:
     #   defaults:
     #     username: 'User name to sign in.'

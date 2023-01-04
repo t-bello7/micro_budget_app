@@ -8,6 +8,8 @@
     <% end %>
 
     <%= f.input :name, input_html: { autofocus: true } %>
-    <%= f.input :icon, input_html: { autofocus: true } %>
+    
+    <%= f.input :icon, as: :file, label: "Icon Image"%>
+
     <%= f.submit class: "btn btn--secondary" %>
 <% end %>
