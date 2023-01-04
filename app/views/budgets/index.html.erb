@@ -1,0 +1,6 @@
+<%= render partial: "shared/navbar" %>
+<%= @category.name %>
+<% @budgets.each do |b| %>
+        <h2> <%= b.name %> </h2>
+<% end %>
+<%= button_to "Add Budget", new_category_budget_path, method: :get, class: "btn btn--secondary" %>

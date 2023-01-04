@@ -1,0 +1,13 @@
+<%= render partial: "shared/navbar" %>
+<h2> Add New Category </h2>
+<%= simple_form_for @category, url: categories_path, data: {turbo: false} do |f| %>
+    <% if @category.errors.any? %>
+        <div class="error-message">
+        <%= @category.errors.full_messages.to_sentence.capitalize %>
+        </div>
+    <% end %>
+
+    <%= f.input :name, input_html: { autofocus: true } %>
+    <%= f.input :icon, input_html: { autofocus: true } %>
+    <%= f.submit class: "btn btn--secondary" %>
+<% end %>

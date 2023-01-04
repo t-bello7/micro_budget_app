@@ -1,0 +1,7 @@
+<%= render partial: "shared/navbar" %>
+<% @categories.each do |c| %>
+    <%= link_to category_budgets_path(c.id) do %>
+        <h2> <%= c.name %> </h2>
+    <% end %>
+<% end %>
+<%= button_to "Add New Category", new_category_path, method: :get, class: "btn btn--secondary" %>
