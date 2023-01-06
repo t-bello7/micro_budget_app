@@ -1,3 +1,31 @@
-.div {
-    color: black;
+.category {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: calc(90vh - var(--space-m));
+align-items: center;
+& .card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: var(--space-m);
+    align-items: center;
+    border: var(--border);
+    & img {
+        width: var(--space-xxxl);
+        height: var(--space-xxxl);
+    }
+}
+
+& .footer {
+    width: 100%;
+    justify-self: end;
+    background-color: var(--color-secondary);
+    padding: var(--space-m);
+    & .btn {
+        width: 100%;
+        border: 1px solid var(--color-white);
+    }
+}
+
 }

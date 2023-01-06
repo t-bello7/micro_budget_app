@@ -24,6 +24,9 @@ en:
       category:
         name: Name
         icon: Icon
+      budget:
+        name: Name
+        amount: Amount    
     # hints:
     #   defaults:
     #     username: 'User name to sign in.'

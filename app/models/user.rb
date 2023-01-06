@@ -17,7 +17,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  has_many :categories
-  has_many :budgets_categories, through: :categories
-  has_many :budgets, through: :budgets_categories
+  has_many :categories, dependent: :delete_all
+  has_many :budgets_categories, through: :categories, dependent: :delete_all
+  has_many :budgets, through: :budgets_categories, dependent: :delete_all
 end

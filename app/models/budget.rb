@@ -11,9 +11,9 @@
 #
 class Budget < ApplicationRecord
   belongs_to :user
-  has_many :budgets_categories
-  has_many :categoriess, through: :budgets_categories
+  has_many :budgets_categories, dependent: :delete_all
+  has_many :categories, through: :budgets_categories, dependent: :delete_all
 
   validates :name, presence: true, length: { minimum: 5, maximum: 30 }
-  validates :amount,  numericality: { only_integer: true }, comparison: { greater_than_or_equal_to: 0 }
+  validates :amount,  numericality: true, comparison: { greater_than_or_equal_to: 0 }
 end

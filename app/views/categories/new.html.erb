@@ -1,15 +1,25 @@
 <%= render partial: "shared/navbar" %>
-<h2> Add New Category </h2>
+
 <%= simple_form_for @category, url: categories_path, data: {turbo: false} do |f| %>
+    
+    <div class="category">
+    <h2> Add New Category </h2>
+    
     <% if @category.errors.any? %>
         <div class="error-message">
         <%= @category.errors.full_messages.to_sentence.capitalize %>
         </div>
     <% end %>
 
-    <%= f.input :name, input_html: { autofocus: true } %>
-    
-    <%= f.input :icon, as: :file, label: "Icon Image"%>
+    <div>
+        <%= f.input :name, input_html: { autofocus: true } %>
+        
+        <%= f.input :icon, as: :file, label: "Icon Image"%>
+    </div>
+    <div class="footer">
+        <%= f.submit class: "btn btn--secondary" %>
+    </div>
 
-    <%= f.submit class: "btn btn--secondary" %>
+    </div>
 <% end %>
+

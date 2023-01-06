@@ -3,6 +3,7 @@ class CategoriesController < ApplicationController
     def index
         @page_name = 'Categories'
         @categories = current_user.categories
+        # @total_amount = @categories.budgets
     end
  
     def new
