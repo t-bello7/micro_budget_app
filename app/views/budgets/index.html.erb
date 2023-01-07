@@ -1,0 +1,20 @@
+<%= render partial: "shared/navbar" %>
+<div class="jumbotron">
+        <%= image_tag @category.icon %> 
+        <p> <%= @category.name %> </p>
+        <h4> Total Payment: </h4> 
+        <span> $ <%= @budgets.sum(:amount) %> </span>
+</div>
+<div class="category"> 
+        <div style="width: 100%;">
+                <% @budgets.each do |b| %>
+                <div class="card">
+                        <h2> <%= b.name %> </h2>
+                        <p> $ <%= b.amount %> </p>
+                </div>
+                <% end %>
+        </div>
+        <div class="footer">
+                <%= button_to "Add Budget", new_category_budget_path, method: :get, class: "btn btn--secondary" %>
+        </div>
+</div>

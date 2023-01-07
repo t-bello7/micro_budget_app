@@ -1,0 +1,16 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: var(--space-xs) var(--space-xs) ;
+  gap: var(--space-s);
+  background-color: var(--color-primary);
+  margin-bottom: var(--space-m);
+  height: 10vh;
+  & > * {
+    color: var(--color-white);
+  }
+  @include media(tabletAndUp) {
+    margin-bottom: var(--space-xl);
+  }
+}

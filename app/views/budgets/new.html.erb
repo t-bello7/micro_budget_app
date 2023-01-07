@@ -1,0 +1,14 @@
+<%= render partial: "shared/navbar" %>
+<h2> Add New Budget </h2>
+<%= simple_form_for @budget, url: category_budgets_path(params['category_id']), data: {turbo: false} do |f| %>
+    <% if @budget.errors.any? %>
+        <div class="error-message">
+        <%= @budget.errors.full_messages.to_sentence.capitalize %>
+        </div>
+    <% end %>
+
+    <%= f.input :name, input_html: { autofocus: true } %>
+    <%= f.input :amount, input_html: { autofocus: true } %>
+     <%= f.association :categories,  as: :check_boxes %> 
+    <%= f.submit class: "btn btn--secondary" %>
+<% end %>
