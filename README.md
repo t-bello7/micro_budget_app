@@ -31,6 +31,7 @@ https://www.youtube.com/watch?v=Rea2AjMgZXA
 
 ** Mybudget ** is a ruby project where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/18895e5ca97a4224b5b5add9f127a99c" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -75,7 +76,7 @@ https://www.youtube.com/watch?v=Rea2AjMgZXA
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://budget-app-uy9a.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
