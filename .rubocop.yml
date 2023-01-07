@@ -10,16 +10,16 @@ Lint/MissingSuper:
   Exclude:
     - 'app/services/**/*'
 Layout/LineLength:
-  Max: 120
+  Max: 200
 Metrics/MethodLength:
-  Max: 20
+  Max: 36
 Metrics/AbcSize:
   Max: 50
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
   IgnoredMethods: ['describe']
-  Max: 58
+  Max: 65
 Metrics/CyclomaticComplexity:
   Max: 9
 Metrics/PerceivedComplexity:

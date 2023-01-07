@@ -11,10 +11,10 @@
 <%= render "devise/shared/error_messages", resource: resource %> 
   <%= f.error_notification %>
   <div class="form-inputs">
-    <%= f.input :name 
+    <%= f.input :name,
                 required: true,
                 autofocus: true,
-                placeholder: "Name",
+                placeholder: "Name"
                   %>
     <%= f.input :email,
                 required: true,
