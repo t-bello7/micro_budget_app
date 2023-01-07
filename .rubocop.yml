@@ -25,7 +25,8 @@ Metrics/CyclomaticComplexity:
 Metrics/PerceivedComplexity:
   Max: 9
 
-
+Style/RedundantConstantBase:
+  Enabled: false
 Style/Documentation:
   Enabled: false
 Style/ClassAndModuleChildren:

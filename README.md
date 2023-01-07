@@ -23,15 +23,15 @@
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
-https://www.youtube.com/watch?v=Rea2AjMgZXA
-
 # 📖 MyBudget <a name="about-project"></a>
 
 > MyBudget application 
 
 ** Mybudget ** is a ruby project where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
+<!-- 
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/18895e5ca97a4224b5b5add9f127a99c" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div> -->
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/18895e5ca97a4224b5b5add9f127a99c" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+[![Watch the video](./project.png)](https://www.loom.com/embed/18895e5ca97a4224b5b5add9f127a99c)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -186,7 +186,9 @@ If you like this project you can show support by giving a star to the project
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank microverse and Gorails community 
+- I would like to thank microverse and Gorails community 
+
+- Snapscan - iOs design and branding Design Guidelies by Gregoire Vella https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -211,7 +213,5 @@ I would like to thank microverse and Gorails community
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
