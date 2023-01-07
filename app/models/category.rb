@@ -15,6 +15,7 @@ class Category < ApplicationRecord
   has_many :budgets, through: :budgets_categories, dependent: :delete_all
   has_one_attached :icon, dependent: :destroy
 
-  validates :name, presence: true, length: { minimum: 5, maximum: 30 }
-  validates :icon, attached: true,   content_type: ['image/png', 'image/jpeg'],  size: { less_than: 1.megabytes , message: 'is too large' }
+  validates :name, presence: true, length: { minimum: 4, maximum: 30 }
+  validates :icon, attached: true, content_type: ['image/png', 'image/jpeg'],
+                   size: { less_than: 1.megabytes, message: 'is too large' }
 end

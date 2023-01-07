@@ -20,4 +20,6 @@ class User < ApplicationRecord
   has_many :categories, dependent: :delete_all
   has_many :budgets_categories, through: :categories, dependent: :delete_all
   has_many :budgets, through: :budgets_categories, dependent: :delete_all
+
+  validates :name, presence: true
 end

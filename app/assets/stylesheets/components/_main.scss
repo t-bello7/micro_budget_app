@@ -1,16 +1,29 @@
+.jumbotron {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-inline: var(--space-m);
+    gap: var(--space-m);
+    & img {
+        width: var(--space-xxxl);
+        height: var(--space-xxxl);
+    }
+}
+
 .category {
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 height: calc(90vh - var(--space-m));
 align-items: center;
+
 & .card {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: var(--space-m);
-    align-items: center;
+    align-items: start;
     border: var(--border);
+    margin-bottom: var(--space-m);
     & img {
         width: var(--space-xxxl);
         height: var(--space-xxxl);

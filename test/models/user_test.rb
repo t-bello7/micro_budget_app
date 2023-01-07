@@ -12,7 +12,7 @@
 #  reset_password_sent_at :datetime
 #  remember_created_at    :datetime
 #
-require "test_helper"
+require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
   # test "the truth" do

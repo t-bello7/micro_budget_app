@@ -1,17 +1,19 @@
 <%= render partial: "shared/navbar" %>
 <div class="category">
-    <% @categories.each do |c| %>
-    <%= link_to category_budgets_path(c.id), class: "card" do %>
-        <%= image_tag c.icon %> 
-        <div>
-            <h2> <%= c.name %> </h2>
-            <span> <%= c.created_at.strftime("%Y-%m-%d") %> </span>
-        </div>
-        <div>
-            <span> <%= c.budgets.sum(:amount) %></span>
-        </div>
-    <% end %>
-    <% end %>
+    <div style="width: 100%;" >
+        <% @categories.each do |c| %>
+        <%= link_to category_budgets_path(c.id), class: "card" do %>
+            <%= image_tag c.icon %> 
+            <div>
+                <h2> <%= c.name %> </h2>
+                <span> <%= c.created_at.strftime("%Y-%m-%d") %> </span>
+            </div>
+            <div>
+                <span> $ <%= c.budgets.sum(:amount) %></span>
+            </div>
+        <% end %>
+        <% end %>
+    </div>
     <div class="footer">
         <%= button_to "Add New Category", new_category_path, method: :get, class: "btn btn--secondary" %>
     </div>

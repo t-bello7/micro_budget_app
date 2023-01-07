@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :categories, only: %i[index show new create destroy] do
     resources :budgets, only: %i[index show new create destroy]
   end
-  
+
   # Defines the root path route ("/")
-  root "splash#index"
+  root 'splash#index'
 end

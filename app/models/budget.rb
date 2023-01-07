@@ -15,5 +15,5 @@ class Budget < ApplicationRecord
   has_many :categories, through: :budgets_categories, dependent: :delete_all
 
   validates :name, presence: true, length: { minimum: 5, maximum: 30 }
-  validates :amount,  numericality: true, comparison: { greater_than_or_equal_to: 0 }
+  validates :amount, numericality: true, comparison: { greater_than_or_equal_to: 0 }
 end
